@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+
+
+	<link rel="stylesheet" type="text/css" href="main.min.css">
+		<script src="ap.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          new GreenAudioPlayer('.aplayerwhite');
+      });
+  </script>
+<style>
+#page{width:98%;margin:0 auto;}
+.aplayerwhite{width:26%;height:44px;margin:0 auto;box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.4);}
+</style>
+</head>
+<body>
+<div id="page">
+			<div class="aplayerwhite">
+	        <audio crossorigin loop="true">
+	            <source src="demo.mp3" type="audio/mpeg">
+	        </audio>
+	    </div>
+		</div>
+</body>
+</html>
