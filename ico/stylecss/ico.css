@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --color1: #346856;
+    --color2: #081820;
+    --color3: #88c070;
+    --color4: #e0f8d0;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: auto;
+    color: #fff;
+    background:url("../../images/ziyong/bgh2560L30.jpg")rgba(255,246,246,0.84) no-repeat center center;
+	background-size:100% 100%;
+	background-attachment:fixed;
+    background:rgba{255,255,255,0}
+	filter:alpha(opacity=100);
+	opacity:1;
+    /*background: linear-gradient(
+    172deg,
+    rgba(23,23,125,0.84),
+    rgba(83,83,140,0.84),
+    rgba(103,103,205,0.84),
+    rgba(83,83,180,0.84),
+    rgba(23,23,125,0.84)
+    
+    rgba(31,22,56,1),
+    rgba(48,33,107,1),
+    rgba(98,40,158,1),
+    rgba(31,22,56,1)
+    
+    #1f1638,
+    #30216b,
+    #62289e,
+    #1f1638
+    
+    #632cca -33%,
+    #62289e 10%,
+    #30216b 50%,
+    #1f1638 100%
+   
+  ); */
+    /*background-image: url("https://global-uploads.webflow.com/5d9d02c4b01a536c7d5d4a35/60087a4816a1c306a04fdb1f_sticky-notes-bg.svg");
+    background-position: 50% 0;
+    background-repeat:no-repeat*/
+}
+
+a {
+	color: rgba(99, 66, 99,1);
+	text-decoration:underline;
+	-webkit-transition:background-color .1s linear,color .1s linear;
+	-moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition:background-color .1s linear,color .1s linear
+}
+a:hover {
+	color: rgba(32, 136, 236,1);
+	text-decoration:underline;
+	-webkit-transition:background-color .1s linear,color .1s linear;
+	-moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition:background-color .1s linear,color .1s linear
+}
+
+#rqn {
+}
+#rq {
+    margin-bottom:1rem;
+}
+#rq2 {
+    margin-bottom:1rem;
+}
+#rq1 {
+    margin-bottom:1rem;
+    
+}
+#nav {
+    padding-bottom:0rem;
+
+}
+
+#nav ul {
+    text-align: right;
+    padding-right:1rem;
+}
+#nav li {
+    display:inline;
+    padding-right:8px;
+}
+#nav li a {
+    color: rgba(99, 66, 99,1);
+    text-decoration: none;
+    font-size:1.1rem;
+}
+#nav li a:hover {
+    text-decoration: none;
+    color: rgba(32, 136, 236,1);
+}
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .navbar {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .navbar {
+    max-width: 100%;
+  }
+}
+
+.navbar {
+    padding-bottom: 0rem;
+	margin:0 auto;
+	text-align:center;
+	border-bottom:2px solid rgba(128,82,139,1);
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.logo {
+    width:auto;
+    height: 142px;
+	padding:0px;
+	margin-top:1rem;
+}
+
+img {
+    width: auto;
+    display: inline-block;
+    image-rendering: pixelated;
+
+}
+
+.main-menu {
+    font-size: 2.1rem;
+    font-weight: 700;
+	text-align:center;
+	margin-top:1rem;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+.top {
+    width:58px;
+    height:58px;
+    position:fixed;
+    right:10px;
+    bottom:62px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:32px;
+    z-index:9;
+	border: 3px solid rgba(171, 171, 181, 1);
+	-webkit-transition: .1s linear;
+	-moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition: .1s linear;
+	cursor: default;
+}
+
+.top:hover{
+    z-index: 9;
+	background-color: rgba(64,32,64,1);
+	border: 3px solid rgba(255, 184, 255, 1);
+	/*padding:2px;*/
+	/*transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;*/
+	-webkit-transition: .1s linear;
+	-moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition: .1s linear;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 5px rgba(123, 0, 123, 1);
+}
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .prompt {
+    max-width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .prompt {
+    max-width: 96%;
+  }
+}
+
+.prompt {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.prompt .p1 {
+    margin: 0px;
+    padding:0px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2rem;
+	color: rgba(80, 80, 144, 0.84);
+	text-align: left;
+	font-weight: bold;
+}
+
+.prompt .p2 {
+    margin: 0px;
+    padding:0px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2rem;
+	color: rgba(66, 66, 66, 1);
+	text-align: left;
+	font-weight: bold;
+}
+
+.prompt .p8 {
+    margin: 0px;
+    padding:0px;
+
+}
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .wrap {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .wrap {
+    max-width: 100%;
+  }
+}
+
+.wrap {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    /*margin-bottom: 1.5rem;*/
+    padding:1rem;
+	margin-top:2rem auto;
+	background-color: rgba(0,51,102,0.15);
+	box-shadow:0px 0px 18px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+@media (min-width: 1024px) {
+	.wrap .item {
+		min-width: auto;
+		min-height: auto;
+		max-width:160px;
+		max-height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box {
+		height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrap .item {
+		min-width: auto;
+		min-height: auto;
+		max-width:160px;
+		max-height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box {
+		height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.wrap .item {
+	    margin:0 auto;
+		min-width: auto;
+		min-height: auto;
+		max-width: 96%;
+		max-height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box {
+		height: auto;
+		width: 100%;
+	}
+
+	.wrap .item .img-box img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.wrap .item {
+    display: inline-block;
+	text-align: center;
+	background: linear-gradient(
+    30deg,
+    rgba(64,32,64,1),
+    rgba(128,64,128,1)
+  );
+	border: 3px solid rgba(128,64,128,1);
+	padding:3px;
+	box-sizing: border-box;
+	margin:0.5rem 0rem 0.5rem 0.5rem;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.84);
+    -webkit-transition: .1s linear;
+    -moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition: .1s linear;
+	border-radius: 4px;
+}
+
+.wrap .item:hover {
+    position:relative;
+    z-index: 4;
+	border: 3px solid rgba(255, 184, 255, 1);
+	/*padding:2px;*/
+	/*transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;*/
+	-webkit-transition: .1s linear;
+	-moz-transition:background-color .1s linear,color .1s linear;
+	-o-transition:background-color .1s linear,color .1s linear;
+	-ms-transition:background-color .1s linear,color .1s linear;
+	transition: .1s linear;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 5px rgba(123, 0, 123, 1);
+	border-radius: 4px;
+}
+
+.wrap .item .img-box {
+margin:0px;
+
+}
+.wrap .item .p3 {cursor: default;
+    color:rgba(225,204,225,1);
+    font-weight: bold;
+background: linear-gradient(
+    30deg,
+    rgba(64,32,64,1),
+    rgba(128,64,128,1)
+  );
+padding:6px 0px 4px 0px;
+margin:0px;
+border-top:1px solid rgba(150,86,150,1);
+text-shadow:0px 0px #222,0px 2px #222,2px 0px #222,0px 0px #222;
+}
+/*.wrap .item .img-box {
+    display: block;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 15px auto;
+}
+
+.wrap .item .img-box img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.wrap .item .p3 {
+    font-size: 16px;
+	color: var(--color4);
+	margin: 15px auto;
+}*/
+
+
+
+
+/* 游戏布局容器 */
+#wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background-image: -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://api.ixiaowai.cn/api/api.php);
+    background-image: linear-gradient(60deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://api.ixiaowai.cn/api/api.php);*/
+    background: rgba(0, 0, 0, 1);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-attachment: fixed, fixed;
+}
+
+
+
+/* 游戏屏幕区 */
+
+/* 纵向 */
+#wrap.normal .container {
+    width: 100%;
+}
+
+/* 横向 */
+#wrap.transverse .container {
+    width: 45%;
+}
+
+/* 通用 */
+#wrap .container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0);
+    background-size: cover;
+    font-size: 0;
+}
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .footer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .footer {
+    max-width: 100%;
+  }
+}
+
+.footer {
+    background: linear-gradient(
+    30deg,
+    rgba(64,32,64,1),
+    rgba(128,64,128,1)
+  );
+    height:auto;
+    width:100%;
+    margin: auto;
+    padding:0.1rem 0 1rem 0;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+    border-top:2px solid rgba(255, 153, 255, 1);
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.5);
+}
+
+.footer .p4 {
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .p4 a {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer .p4 a:hover {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.game {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.thumbnail {
+    width: 256px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.thumbnail:hover {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: var(--color4); /* Green */
+    border-radius: 8px;
+    border: none;
+    color: var(--color1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
