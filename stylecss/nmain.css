@@ -1,7 +1,7 @@
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     margin: auto;
-    color: #fff;
+    color: #343434;
     background:url("/images/ziyong/bgh2560L30.jpg")rgba(255,246,246,0.84) no-repeat center center;
 	background-size:100% 100%;
 	background-attachment:fixed;
@@ -361,7 +361,17 @@ img {
 	box-shadow:0px 0px 18px 1px rgba(0, 0, 0, 0.5);
     
 }
+.wrap0 {
 
+    position: relative;
+    flex-wrap: wrap;
+    /*margin-bottom: 1.5rem;*/
+    padding:1rem;
+	margin-top:1.2rem;
+	background-color: rgba(0,51,102,0.15);
+	box-shadow:0px 0px 18px 1px rgba(0, 0, 0, 0.5);
+    
+}
 
 @media (min-width: 1024px) {
 	.wrap .item {
