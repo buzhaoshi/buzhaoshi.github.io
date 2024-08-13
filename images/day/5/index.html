@@ -1,0 +1,71 @@
+<!-- 模板 --><!-- 模板 --><!-- 模板 -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba</title>
+        <meta name="keywords" content="无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba" />
+        <meta name="description" content="无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba"/>
+        <link rel="icon" type="image/png" href="./wsg.svg" />
+        <link rel="stylesheet" type="text/css" href="./mains.css" />
+    </head>
+        
+        <body>
+            <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+			<!--按钮区域，可更改文字显示或变更位置，[value-“2”]根据总页数手动定义，此数值不要超过JS里定义的数组数值-->
+            <div class="page-icon">
+                <button>共计
+                    <input id="totalPage" type="button" value="1" readonly="readonly"> /99页</button>
+                <button>第
+                    <input id="currentPage" onchange="choose_page()" type="text" value="1" /> 页</button>
+                <button class="firstPage" onclick="first_click()">首页</button>
+                <button class="beforePage" onclick="prev_click()">上一页</button>
+                <button class="nextPage" onclick="next_click()">下一页</button>
+                <button class="lastPage" onclick="last_click()">末页</button>
+            </div>
+            <div id="pager">
+                <!-- 页面内容添加区，每一个[page]代表一个页面 -->
+                <div class="page-block">
+					
+<div class="page-1"><img loading="lazy" id="Img961" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t019e8c47f41f4aee64.jpg" onclick="demo('Img961')">
+<img loading="lazy" id="Img962" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t0182427d6a44c4c9cd.jpg" onclick="demo('Img962')">
+<img loading="lazy" id="Img963" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01aece48b27197c53d.jpg" onclick="demo('Img963')">
+<img loading="lazy" id="Img964" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t011d3b77687fefc06f.jpg" onclick="demo('Img964')">
+<img loading="lazy" id="Img965" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01134e08c62c6913a6.jpg" onclick="demo('Img965')">
+<img loading="lazy" id="Img966" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t012c4c3d950a308750.jpg" onclick="demo('Img966')">
+<img loading="lazy" id="Img967" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01a3e6a8be946d8ff9.jpg" onclick="demo('Img967')">
+<img loading="lazy" id="Img968" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01a60bfc06ef222b87.jpg" onclick="demo('Img968')">
+<img loading="lazy" id="Img969" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t012695f26e23aa5443.jpg" onclick="demo('Img969')">
+<img loading="lazy" id="Img970" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01c1658999a0bf4a48.jpg" onclick="demo('Img970')">
+<img loading="lazy" id="Img971" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01ccc15e452424fb49.jpg" onclick="demo('Img971')">
+<img loading="lazy" id="Img972" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t01b202f2f286ec93ad.jpg" onclick="demo('Img972')">
+<img loading="lazy" id="Img973" class="myImg" src="http://cdn-hw-static.shanhutech.cn/bizhi/staticwp/202210/t019d2d8255b1b7af73.jpg" onclick="demo('Img973')">
+</div>
+
+					
+                </div>
+                <!-- 图片显示区域，无需更改 -->
+                <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                    <!-- 图片显示内容，无需更改 -->
+                    <img class="content" id="img01">
+                </div>
+                <!--脚本代码，无需更改-->
+                <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+                </script>
+                <br/>
+            </div>
+			<!--按钮区域，可更改文字显示或变更位置-->
+            <div class="page-icon">
+                <button class="firstPage" onclick="first_click()">首页</button>
+                <button class="beforePage" onclick="prev_click()">上一页</button>
+                <button class="nextPage" onclick="next_click()">下一页</button>
+                <button class="lastPage" onclick="last_click()">末页</button>
+            </div>
+        </body>
+
+</html>
