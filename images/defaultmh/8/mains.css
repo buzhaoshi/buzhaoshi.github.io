@@ -1,0 +1,184 @@
+﻿* {
+	margin:0px;
+	padding:0px;
+}
+/* 初始化
+-----------------------------------------------*/
+body {
+	font-family: Microsoft Yahei, \5FAE\8F6F\96C5\9ED1, \5b8b\4f53, Arial, Lucida, Verdana, Helvetica, sans-serif;
+	background:url("../../img/bgh2560L30.jpg")rgba(255,246,246,1) no-repeat center center;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+body, button, input, textarea {
+	font-size: 16px;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+p, ul, ol, dl, dt, dd, form, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+#pager {
+	font-size:0px;
+	margin:0rem;
+	background-color: rgba(0,51,102,0.15);
+	box-shadow:0px 0px 18px 1px rgba(0, 0, 0, 0.5);
+	
+}
+/*触发弹窗图片的样式*/
+	.myImg {
+	margin: 0px;
+	cursor: pointer;
+	background-color: rgba(44, 44, 44, 1);
+	height: 242px;
+    -webkit-transition: 0.15s linear;
+    -moz-transition:background-color 0.15s linear,color 0.15s linear;
+	-o-transition:background-color 0.15s linear,color 0.15s linear;
+	-ms-transition:background-color 0.15s linear,color 0.15s linear;
+	transition: 0.15s linear;
+	padding:0px;
+	
+}
+.myImg:hover {
+    position: relative;
+    z-index: 5;
+	background-color: rgba(184, 184, 235, 0.9);
+	box-shadow:0px 0px 20px 5px rgba(0, 0, 0, 1);
+	border-radius: 0px;
+    -webkit-transition: 0.15s linear;
+    -moz-transition:background-color 0.15s linear,color 0.15s linear;
+	-o-transition:background-color 0.15s linear,color 0.15s linear;
+	-ms-transition:background-color 0.15s linear,color 0.15s linear;
+	transition: 0.15s linear;
+
+}
+/* 弹窗的位置和背景颜色*/
+	.modal {
+	background-color:rgba(44,44,44, 1);
+	display: none;
+	position:fixed;
+	width:100%;
+	height:auto;
+	top:0px;left:0px;right:0px;bottom:0px;
+	/* 绝对定位*/
+	z-index: 10;
+	padding:0px;
+	/* 元素置前*/
+	overflow: auto;
+	/*溢出出现滚动条*/
+	 }
+/* 弹窗图片的大小*/
+	.content {
+	display: block;
+	width:100%;
+	height:auto;
+	box-shadow:0px 0px 16px 8px rgba(0, 0, 0, 0.84);
+}
+#footer {
+	display:block;
+	margin:0 auto;
+	text-align:left;
+	float:left;
+	line-height:2.4rem;
+	margin:1rem;
+}
+#footer a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration:none;
+	font-weight: bolder;
+	cursor: pointer;
+	font-size: 20px;
+	background-color: rgba(0,255,255, 0.6);
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 1);
+	-webkit-transition:background-color .2s linear,color .2s linear;
+	-moz-transition:background-color .2s linear,color .2s linear;
+	-o-transition:background-color .2s linear,color .2s linear;
+	-ms-transition:background-color .2s linear,color .2s linear;
+	transition:background-color .2s linear,color .2s linear;
+	)
+}
+#footer a:active {
+	box-shadow:0px 0px 0px 0px #222,0px 3px 7px 0px #111,inset 0px 1px 1px 0px rgba(250,250,250,0.2),inset 0px -10px 35px 5px rgba(0,0,0,0.4);
+	top:1px;
+}
+#footer a:hover {
+	background-color: rgba(0, 255, 255, 0.5);
+}
+#currentPage {
+	color:rgba(255, 255, 255, 0.84);
+	cursor: pointer;
+	border: none;
+	padding:0px;
+	font-size: 20px;
+	cursor: auto;
+	width:2rem;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.34);
+}
+#totalPage {
+	cursor: default;
+	color:rgba(255, 255, 255, 0.84);
+	background-color: rgba(0, 0, 0, 0.34);
+	font-size: 20px;
+	width:2rem;
+	
+}
+.page-block {
+	width: 100%;
+}
+.page-1 {
+	display: block;
+}
+.page-2,.page-3,.page-4,.page-5,.page-6,.page-7,.page-8,.page-9,.page-10,.page-11,.page-12,.page-13,.page-14,.page-15,.page-16,.page-17,.page-18,.page-19,.page-20,.page-21,.page-22,.page-23,.page-24,.page-25,.page-26,.page-27,.page-28,.page-29,.page-30,.page-31,.page-32,.page-33,.page-34,.page-35,.page-36,.page-37,.page-38,.page-39,.page-40,.page-41,.page-42,.page-43,.page-44,.page-45,.page-46,.page-47,.page-48,.page-49,.page-50,.page-51,.page-52,.page-53,.page-54,.page-55,.page-56,.page-57,.page-58,.page-59,.page-60,.page-61,.page-62,.page-63,.page-64,.page-65,.page-66,.page-67,.page-68,.page-69,.page-70,.page-71,.page-72,.page-73,.page-74,.page-75,.page-76,.page-77,.page-78,.page-79,.page-80,.page-81,.page-82,.page-83,.page-84,.page-85,.page-86,.page-87,.page-88,.page-89,.page-90,.page-91,.page-92,.page-93,.page-94,.page-95,.page-96,.page-97,.page-98,.page-99 {
+	display: none;
+}
+
+.page-icon {
+	margin:1rem;
+	text-align:right;
+	line-height:2.2rem;
+	/*position:fixed;
+	bottom:0px;
+	right:0px;
+	border-radius:0px;
+	font-size:20px;*/
+}
+.page-icon button:nth-child(3) {
+	cursor: default;
+}
+.page-icon button:nth-child(4) {
+	cursor: default;
+}
+.page-icon button {
+	color: rgba(0, 0, 0, 0.72);
+	background-color: rgba(153, 204, 204, 1);
+	text-decoration:none;
+	font-weight: bolder;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 6px;
+	border-radius: 0px;
+	border: 1px solid rgba(102,102,153,0.44);
+	-webkit-transition:background-color .4s linear,color .1s linear;
+	-moz-transition:background-color .4s linear,color .1s linear;
+	-o-transition:background-color .4s linear,color .1s linear;
+	-ms-transition:background-color .4s linear,color .1s linear;
+	transition:background-color .1s linear,color .1s linear;
+	)
+}
+.page-icon button:active {
+	box-shadow:0px 0px 0px 0px #447777,0px 3px 7px 0px #669999,inset 0px 1px 1px 0px rgba(250,250,250,0.1),inset 0px -10px 35px 5px rgba(0,0,0,0.2);
+	top:1px;
+}
+.page-icon button:hover {
+	background-color: rgba(204, 204, 255, 0.84);
+	box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
