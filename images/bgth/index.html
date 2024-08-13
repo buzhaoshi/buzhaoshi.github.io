@@ -1,0 +1,137 @@
+<!-- 以下为图库源代码 -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba</title>
+        <meta name="keywords" content="无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba" />
+        <meta name="description" content="无事阁-不找事儿-电玩街机-在线图库-原创软件-资源论坛-怀旧在线游戏-snk-neogeo-capcom-cps-pgm-fc-nes-snes-md-gba"/>
+        <link rel="icon" type="image/png" href="./wsg.svg" />
+        <link rel="stylesheet" type="text/css" href="./mains.css" />
+    </head>
+        
+        <body>
+            <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+			<!--按钮区域，可更改文字显示或变更位置，[value-“2”]根据总页数手动定义，此数值不要超过JS里定义的数组数值-->
+            <div class="page-icon">
+                <button>共计
+                    <input id="totalPage" type="button" value="6" readonly="readonly"> /99页</button>
+                <button>第
+                    <input id="currentPage" onchange="choose_page()" type="text" value="1" /> 页</button>
+                <button class="firstPage" onclick="first_click()">首页</button>
+                <button class="beforePage" onclick="prev_click()">上一页</button>
+                <button class="nextPage" onclick="next_click()">下一页</button>
+                <button class="lastPage" onclick="last_click()">末页</button>
+            </div>
+            <div id="pager">
+                <!-- 页面内容添加区，每一个[page]代表一个页面 -->
+                <div class="page-block"><div class="page-1">
+<img loading="lazy" id="Img1" class="myImg" src="./bigua/壁挂图画01.jpg" onclick="demo('Img1')">
+<img loading="lazy" id="Img2" class="myImg" src="./bigua/壁挂图画010.jpg" onclick="demo('Img2')">
+<img loading="lazy" id="Img3" class="myImg" src="./bigua/壁挂图画011.jpg" onclick="demo('Img3')">
+<img loading="lazy" id="Img4" class="myImg" src="./bigua/壁挂图画012.jpg" onclick="demo('Img4')">
+<img loading="lazy" id="Img5" class="myImg" src="./bigua/壁挂图画013.jpg" onclick="demo('Img5')">
+<img loading="lazy" id="Img6" class="myImg" src="./bigua/壁挂图画014.jpg" onclick="demo('Img6')">
+<img loading="lazy" id="Img7" class="myImg" src="./bigua/壁挂图画015.jpg" onclick="demo('Img7')">
+<img loading="lazy" id="Img8" class="myImg" src="./bigua/壁挂图画016.jpg" onclick="demo('Img8')">
+<img loading="lazy" id="Img9" class="myImg" src="./bigua/壁挂图画017.jpg" onclick="demo('Img9')">
+<img loading="lazy" id="Img10" class="myImg" src="./bigua/壁挂图画018.jpg" onclick="demo('Img10')">
+<img loading="lazy" id="Img11" class="myImg" src="./bigua/壁挂图画019.jpg" onclick="demo('Img11')">
+<img loading="lazy" id="Img12" class="myImg" src="./bigua/壁挂图画02.jpg" onclick="demo('Img12')">
+</div>
+<div class="page-2">
+<img loading="lazy" id="Img13" class="myImg" src="./bigua/壁挂图画020.jpg" onclick="demo('Img13')">
+<img loading="lazy" id="Img14" class="myImg" src="./bigua/壁挂图画021.jpg" onclick="demo('Img14')">
+<img loading="lazy" id="Img15" class="myImg" src="./bigua/壁挂图画022.jpg" onclick="demo('Img15')">
+<img loading="lazy" id="Img16" class="myImg" src="./bigua/壁挂图画023.jpg" onclick="demo('Img16')">
+<img loading="lazy" id="Img17" class="myImg" src="./bigua/壁挂图画024.jpg" onclick="demo('Img17')">
+<img loading="lazy" id="Img18" class="myImg" src="./bigua/壁挂图画025.jpg" onclick="demo('Img18')">
+<img loading="lazy" id="Img19" class="myImg" src="./bigua/壁挂图画026.jpg" onclick="demo('Img19')">
+<img loading="lazy" id="Img20" class="myImg" src="./bigua/壁挂图画027.jpg" onclick="demo('Img20')">
+<img loading="lazy" id="Img21" class="myImg" src="./bigua/壁挂图画028.jpg" onclick="demo('Img21')">
+<img loading="lazy" id="Img22" class="myImg" src="./bigua/壁挂图画029.jpg" onclick="demo('Img22')">
+<img loading="lazy" id="Img23" class="myImg" src="./bigua/壁挂图画03.jpg" onclick="demo('Img23')">
+<img loading="lazy" id="Img24" class="myImg" src="./bigua/壁挂图画030.jpg" onclick="demo('Img24')">
+</div>
+<div class="page-3">
+<img loading="lazy" id="Img25" class="myImg" src="./bigua/壁挂图画031.jpg" onclick="demo('Img25')">
+<img loading="lazy" id="Img26" class="myImg" src="./bigua/壁挂图画032.jpg" onclick="demo('Img26')">
+<img loading="lazy" id="Img27" class="myImg" src="./bigua/壁挂图画033.jpg" onclick="demo('Img27')">
+<img loading="lazy" id="Img28" class="myImg" src="./bigua/壁挂图画034.jpg" onclick="demo('Img28')">
+<img loading="lazy" id="Img29" class="myImg" src="./bigua/壁挂图画035.jpg" onclick="demo('Img29')">
+<img loading="lazy" id="Img30" class="myImg" src="./bigua/壁挂图画036.jpg" onclick="demo('Img30')">
+<img loading="lazy" id="Img31" class="myImg" src="./bigua/壁挂图画037.jpg" onclick="demo('Img31')">
+<img loading="lazy" id="Img32" class="myImg" src="./bigua/壁挂图画038.jpg" onclick="demo('Img32')">
+<img loading="lazy" id="Img33" class="myImg" src="./bigua/壁挂图画039.jpg" onclick="demo('Img33')">
+<img loading="lazy" id="Img34" class="myImg" src="./bigua/壁挂图画04.jpg" onclick="demo('Img34')">
+<img loading="lazy" id="Img35" class="myImg" src="./bigua/壁挂图画040.jpg" onclick="demo('Img35')">
+<img loading="lazy" id="Img36" class="myImg" src="./bigua/壁挂图画041.jpg" onclick="demo('Img36')">
+</div>
+<div class="page-4">
+<img loading="lazy" id="Img37" class="myImg" src="./bigua/壁挂图画042.jpg" onclick="demo('Img37')">
+<img loading="lazy" id="Img38" class="myImg" src="./bigua/壁挂图画043.jpg" onclick="demo('Img38')">
+<img loading="lazy" id="Img39" class="myImg" src="./bigua/壁挂图画044.jpg" onclick="demo('Img39')">
+<img loading="lazy" id="Img40" class="myImg" src="./bigua/壁挂图画045.jpg" onclick="demo('Img40')">
+<img loading="lazy" id="Img41" class="myImg" src="./bigua/壁挂图画046.jpg" onclick="demo('Img41')">
+<img loading="lazy" id="Img42" class="myImg" src="./bigua/壁挂图画047.jpg" onclick="demo('Img42')">
+<img loading="lazy" id="Img43" class="myImg" src="./bigua/壁挂图画048.jpg" onclick="demo('Img43')">
+<img loading="lazy" id="Img44" class="myImg" src="./bigua/壁挂图画049.jpg" onclick="demo('Img44')">
+<img loading="lazy" id="Img45" class="myImg" src="./bigua/壁挂图画05.jpg" onclick="demo('Img45')">
+<img loading="lazy" id="Img46" class="myImg" src="./bigua/壁挂图画050.jpg" onclick="demo('Img46')">
+<img loading="lazy" id="Img47" class="myImg" src="./bigua/壁挂图画051.jpg" onclick="demo('Img47')">
+<img loading="lazy" id="Img48" class="myImg" src="./bigua/壁挂图画052.jpg" onclick="demo('Img48')">
+</div>
+<div class="page-5">
+<img loading="lazy" id="Img49" class="myImg" src="./bigua/壁挂图画053.jpg" onclick="demo('Img49')">
+<img loading="lazy" id="Img50" class="myImg" src="./bigua/壁挂图画054.jpg" onclick="demo('Img50')">
+<img loading="lazy" id="Img51" class="myImg" src="./bigua/壁挂图画055.jpg" onclick="demo('Img51')">
+<img loading="lazy" id="Img52" class="myImg" src="./bigua/壁挂图画056.jpg" onclick="demo('Img52')">
+<img loading="lazy" id="Img53" class="myImg" src="./bigua/壁挂图画057.jpg" onclick="demo('Img53')">
+<img loading="lazy" id="Img54" class="myImg" src="./bigua/壁挂图画058.jpg" onclick="demo('Img54')">
+<img loading="lazy" id="Img55" class="myImg" src="./bigua/壁挂图画059.jpg" onclick="demo('Img55')">
+<img loading="lazy" id="Img56" class="myImg" src="./bigua/壁挂图画06.jpg" onclick="demo('Img56')">
+<img loading="lazy" id="Img57" class="myImg" src="./bigua/壁挂图画060.jpg" onclick="demo('Img57')">
+<img loading="lazy" id="Img58" class="myImg" src="./bigua/壁挂图画061.jpg" onclick="demo('Img58')">
+<img loading="lazy" id="Img59" class="myImg" src="./bigua/壁挂图画062.jpg" onclick="demo('Img59')">
+<img loading="lazy" id="Img60" class="myImg" src="./bigua/壁挂图画063.jpg" onclick="demo('Img60')">
+</div>
+<div class="page-6">
+<img loading="lazy" id="Img61" class="myImg" src="./bigua/壁挂图画064.jpg" onclick="demo('Img61')">
+<img loading="lazy" id="Img62" class="myImg" src="./bigua/壁挂图画065.jpg" onclick="demo('Img62')">
+<img loading="lazy" id="Img63" class="myImg" src="./bigua/壁挂图画066.jpg" onclick="demo('Img63')">
+<img loading="lazy" id="Img64" class="myImg" src="./bigua/壁挂图画067.jpg" onclick="demo('Img64')">
+<img loading="lazy" id="Img65" class="myImg" src="./bigua/壁挂图画068.jpg" onclick="demo('Img65')">
+<img loading="lazy" id="Img66" class="myImg" src="./bigua/壁挂图画069.jpg" onclick="demo('Img66')">
+<img loading="lazy" id="Img67" class="myImg" src="./bigua/壁挂图画07.jpg" onclick="demo('Img67')">
+<img loading="lazy" id="Img68" class="myImg" src="./bigua/壁挂图画070.jpg" onclick="demo('Img68')">
+<img loading="lazy" id="Img69" class="myImg" src="./bigua/壁挂图画071.jpg" onclick="demo('Img69')">
+<img loading="lazy" id="Img70" class="myImg" src="./bigua/壁挂图画072.jpg" onclick="demo('Img70')">
+<img loading="lazy" id="Img71" class="myImg" src="./bigua/壁挂图画073.jpg" onclick="demo('Img71')">
+<img loading="lazy" id="Img72" class="myImg" src="./bigua/壁挂图画08.jpg" onclick="demo('Img72')">
+<img loading="lazy" id="Img73" class="myImg" src="./bigua/壁挂图画09.jpg" onclick="demo('Img73')">
+</div></div>
+                <!-- 图片显示区域，无需更改 -->
+                <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                    <!-- 图片显示内容，无需更改 -->
+                    <img class="content" id="img01">
+                </div>
+                <!--脚本代码，无需更改-->
+                <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+                </script>
+                <br/>
+            </div>
+			<!--按钮区域，可更改文字显示或变更位置-->
+            <div class="page-icon">
+                <button class="firstPage" onclick="first_click()">首页</button>
+                <button class="beforePage" onclick="prev_click()">上一页</button>
+                <button class="nextPage" onclick="next_click()">下一页</button>
+                <button class="lastPage" onclick="last_click()">末页</button>
+            </div>
+        </body>
+
+</html>
