@@ -374,6 +374,13 @@ img {
     
 }
 
+.wrap0 img {    max-width: 960px;
+    border:2px solid #bcbcbc;
+    padding:4px;
+    border-radius:4px;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.4);
+	display:block;}
+
 @media (min-width: 1024px) {
 	.wrap .item {
 		min-width: auto;
