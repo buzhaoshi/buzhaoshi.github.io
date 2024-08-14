@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>随机密码字符</title>
+<style>
+#main { 
+    max-width: 100%;
+	margin: 0 auto;
+	background:#912525;
+}
+
+#mainleft{
+	width:244px;
+	position:fixed;
+	top:28px;
+	left:10px;
+	padding:10px 10px 7px 10px;
+	border: 1px solid #000;
+}
+#mainright{
+	position:fixed;
+    left:284px;
+	top:2px;
+	font-size: 16px;
+}
+#header {
+	margin:-6px 0px 0px 8px;
+    width:244px;
+	text-align:right;
+	position:fixed;
+	left:10px;
+	padding-left:14px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #eee;
+    list-style: none;
+    font-size: 14px;
+}
+
+li {
+    clear: both;
+    overflow: hidden;
+    padding: .5em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pure-form label {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+}
+
+.pure-form span {
+    margin: 6px 0;
+}
+
+input {
+	float:right;
+    margin-top: 0px;
+}
+
+#special_characters,
+#exclude_characters,
+#password_length,
+#password_quantity {
+    margin-top: 0;
+    width: 5em;
+    text-align: right;
+}
+
+#special_characters,
+#exclude_characters {
+    width: 60%;
+}
+
+#generate {
+    margin: 0;
+}
+
+#output {
+	font-family: Monaco, Menlo, Consolas, Inconsolata, 'Deja Vu Sans Mono', 'Droid Sans Mono', 'Lucida Console', 'Courier New', Courier, monospace;
+}
+</style>
+    </head>
+    
+    <body>
+        <div id ="header">
+	<button type="button" id="generate" class="pure-button pure-button-primary pure-input-1">生成随机字符</button>
+</div>
+<form id="main">
+<div id="mainleft">
+	<ul>
+		<li><label><input type="checkbox" name="include_number" checked=""><span>数字 0~9 </span></label></li>
+		<li><label><input type="checkbox" name="include_lowercaseletters" checked=""><span>小写字母 a~z </span></label></li>
+		<li><label><input type="checkbox" name="include_uppercaseletters" checked=""><span>大写字母 A~Z</span></label></li>
+        <li><label><span>添加符号</span><input type="text" name="special_characters" placeholder="默认不会生成特殊字符..."></label></li>
+        <li><label><span>屏蔽字符</span><input type="text" name="exclude_characters" placeholder="屏蔽不需要的字符..."></label></li>
+		<li><label><input type="checkbox" name="password_unique"><span>字符不重复</span></label></li>
+		<li><label><span>字符长度</span><input type="number" name="password_length" min="0" value="8"></label></li>
+		<li><label><span>生成数量</span><input type="number" name="password_quantity" min="0" value="1"></label></li>
+	</ul>
+	</div>
+
+	
+		
+		<div id="mainright">
+	<textarea style="font-size:16px;font-weight:bold;color:#444444" name="output" class="pure-input-1" cols="66" rows="18" ></textarea>
+	</div>
+</form>
+
+<script>
+var form = document.getElementById('main');
+
+function rand(max) {
+    return Math.floor(Math.random() * max);
+}
+
+document.getElementById('generate').onclick = function () {
+    var chars = '';
+    var passwords = [];
+    var passwordUnique = form.password_unique.checked;
+    var quantity = Number(form.password_quantity.value);
+
+    if (form.include_number.checked) chars += '0123456789';
+    if (form.include_lowercaseletters.checked) chars += 'abcdefghijklmnopqrstuvwxyz';
+    if (form.include_uppercaseletters.checked) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (form.special_characters.value) chars += form.special_characters.value;
+    if (form.exclude_characters.value) chars = chars.replace(new RegExp(form.exclude_characters.value.split('').join('|'), 'g'), '');
+
+    while (passwords.length < quantity) {
+        var _chars = chars.split('');
+        var password = '';
+
+        for (var i = 0, l = form.password_length.value; i < l; i++) {
+            if (_chars.length < 1) break;
+
+            var idx = rand(_chars.length);
+            password += _chars[idx];
+            if (passwordUnique) _chars.splice(idx, 1);
+        }
+
+        if (passwords.indexOf(password) === -1) passwords.push(password);
+    }
+
+    form.output.value = passwords.join('\n');
+};
+
+form.output.onfocus = function () {
+    this.select();
+};
+
+function loadConfig() {
+    var config = JSON.parse(localStorage.getItem('passwordConfig'));
+
+    Object.keys(config).forEach(function(name) {
+        var value = config[name];
+        var input = form[name];
+
+        if (input.type === 'checkbox') {
+            input.checked = value;
+        } else {
+            input.value = value;
+        }
+    });
+}
+
+function saveConfig() {
+    var config = {};
+
+    [].forEach.call(form.getElementsByTagName('input'), function(input) {
+        config[input.name] = input.type === 'checkbox' ? input.checked : input.value;
+    });
+
+    localStorage.setItem('passwordConfig', JSON.stringify(config));
+}
+
+[].forEach.call(form.getElementsByTagName('input'), function(input) {
+    input.addEventListener('change', saveConfig);
+});
+
+if (localStorage.getItem('passwordConfig')) {
+    loadConfig();
+}
+</script>
+    </body>
+</html>

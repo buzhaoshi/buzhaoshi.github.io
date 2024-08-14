@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <title>格式化文本</title> 
+  <style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+
+}
+
+.clear {
+	clear: both;
+}
+
+#main {
+	width: 100%;
+
+}
+
+#left {
+	width: 48%;
+    position:fixed;
+	left:1%;
+}
+
+#right {
+	width: 47%;
+	position:fixed;
+	left:51%;
+}
+
+#content {
+	width: 100%;
+
+}
+
+#content .label {
+	font-size: 18px;
+	float:right;
+}
+
+#content .textarea {
+
+}
+
+#source,#dest {
+	width: 100%;
+    margin-top:28px;
+}
+
+#change_btn {
+	float: left;
+	position:fixed;
+	left:1%;
+	top:2px;
+}
+
+}
+#change_btn input {
+	width: 88px;
+	height: 24px;
+}
+
+</style> 
+  <script type="text/javascript" src=""></script> 
+  <script type="text/javascript">
+
+var destObj = 'dest';
+
+function $(id) { return document.getElementById(id); }
+
+function changeFormat(){
+	var source = $("source").value;
+	var dest = format(source);
+	$("dest").value = dest;
+}
+
+function format(source){
+	var dest = "";
+	var arr = source.split("\n");
+	dest = "";
+	for(var i = 0 ; i < arr.length; i++){
+		var temp = arr[i].replace(/(^\s*)/g, "");
+		var destStr = "";
+		for(var k = 0; k < temp.length; k++){
+			if(temp.charCodeAt(k) != 32){
+				destStr += temp[k];
+			} else {
+				var charCode = temp.charCodeAt(k - 1);
+				if((charCode >= 48 && charCode <= 57) || (charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)){
+				    destStr += temp[k];
+				}
+			}
+		}
+		
+		if(destStr.length != 0){
+			dest += "";
+			dest += destStr;
+			dest += "\n\n";
+		}
+	}
+	
+	return dest.toString();
+}
+
+
+
+</script> 
+  <script src="" charset="utf-8" type="text/javascript"></script>
+ </head> 
+ <body onload="init()"> 
+  <div id="main"> 
+   <div id="content"> 
+    <div id="left"> 
+     <div id="change_btn"> 
+      <input value="输入文本 → 格式化 → 输出文本" onclick="changeFormat()" type="button" /> 
+     </div> 
+     <div class="textarea"> 
+      <textarea style="font-size:16px;font-weight:bold;color:#444444;" id="source" cols="66" rows="18"></textarea> 
+     </div> 
+    </div> 
+    <div id="right"> 
+     <div class="textarea"> 
+      <textarea style="font-size:16px;font-weight:bold;color:#444444;" id="dest" cols="66" rows="18"></textarea> 
+     </div> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>
