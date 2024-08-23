@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --color1: #346856;
+    --color2: #081820;
+    --color3: #88c070;
+    --color4: #e0f8d0;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: auto;
+    color: #fff;
+    background: linear-gradient(
+    0deg,
+    rgba(0,0,0,1); -33%,
+    rgba(0,0,0,1); 10%,
+    rgba(0,0,0,1); 50%,
+    rgba(0,0,0,1); 100%
+  );
+    /*background-image: url("https://global-uploads.webflow.com/5d9d02c4b01a536c7d5d4a35/60087a4816a1c306a04fdb1f_sticky-notes-bg.svg");
+    background-position: 50% 0;
+    background-repeat:no-repeat*/
+}
+
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .navbar {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .navbar {
+    max-width: 95%;
+  }
+}
+
+.navbar {
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.logo {
+    width: auto;
+    max-height: 50px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    image-rendering: pixelated;
+}
+
+.main-menu {
+    font-size: 1.8rem;
+    margin: auto 10px;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .prompt {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .prompt {
+    max-width: 95%;
+  }
+}
+
+.prompt {
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding: 0 0 1.5rem;
+}
+
+.prompt .p1 {
+    margin-top: 0;
+    margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: left;
+}
+
+.prompt .p2 {
+    margin-top: 0;
+    margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+	text-align: left;
+}
+
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .wrap {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .wrap {
+    max-width: 95%;
+  }
+}
+
+.wrap {
+    display: flex;
+    margin: auto;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+	.wrap .item {
+		min-width: auto;
+		min-height: auto;
+		width: 25%;
+	}
+
+	.wrap .item .img-box {
+		height: 150px;
+		width: 150px;
+	}
+
+	.wrap .item .img-box img {
+		height: 150px;
+		width: 150px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrap .item {
+		min-width: auto;
+		min-height: auto;
+		width: 33.333333%;
+	}
+
+	.wrap .item .img-box {
+		height: 120px;
+		width: 120px;
+	}
+
+	.wrap .item .img-box img {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+@media (max-width: 600px) {
+	.wrap .item {
+		min-width: auto;
+		min-height: auto;
+		width: 50%;
+	}
+
+	.wrap .item .img-box {
+		height: 120px;
+		width: 120px;
+	}
+
+	.wrap .item .img-box img {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+.wrap .item {
+    display: inline-block;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-sizing: border-box;
+}
+
+.wrap .item:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 1);
+	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;
+	-webkit-transition: 0.2s linear;
+	transition: 0.2s linear;
+	cursor: pointer
+}
+
+.wrap .item .img-box {
+    display: block;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 15px auto;
+}
+
+/*.wrap .item .img-box img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}*/
+
+.wrap .item .p3 {
+    font-size: 16px;
+	color: var(--color4);
+	margin: 15px auto;
+}
+
+
+
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background-image: -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://api.ixiaowai.cn/api/api.php);
+    background-image: linear-gradient(60deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://api.ixiaowai.cn/api/api.php);*/
+    background: rgba(0, 0, 0, 1);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-attachment: fixed, fixed;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background:url("/dwjj/simulator/images/bg/0008.jpg")rgba(0,0,0,0) no-repeat center center;
+    background-size: 100% 100%;
+    font-size: 0;
+}
+
+
+
+/* 游戏屏幕区 */
+
+/* 纵向 */
+#wrap.normal .container {
+    width: 100%;
+}
+
+/* 横向 */
+#wrap.transverse .container {
+    width: 45%;
+}
+
+/* 通用 */
+#wrap .container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background:url("/dwjj/simulator/images/text/text1440.png")rgba(0,0,0,0) no-repeat center center;
+    background-size:100% 100%;
+}
+
+
+
+@media screen and (min-width: 768px) { 
+/*当屏幕尺寸大于768px时，应用下面的CSS样式*/
+  .footer {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+/*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+  .footer {
+    max-width: 95%;
+  }
+}
+
+.footer {
+    margin: auto;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer .p4 {
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .p4 a {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+
+.game {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.thumbnail {
+    width: 256px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.thumbnail:hover {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: var(--color4); /* Green */
+    border-radius: 8px;
+    border: none;
+    color: var(--color1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
