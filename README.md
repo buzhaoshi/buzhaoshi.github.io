@@ -5,3 +5,4 @@
 Web街机，600+游戏收录 电玩街机直通车：https://buzhaoshi.github.io/dwjj/index.html
 游戏工具：街机扫描线 https://buzhaoshi.github.io/htm/arcscanline2021009.html 还原CRT街机荧屏 多种效果选择
 本地VST音乐播放器：https://buzhaoshi.github.io/htm/audiovstplayer.html
+感谢 GitHub 提供后台支持！
