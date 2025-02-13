@@ -1,4 +1,4 @@
-本站网址：https://www.buzhaoshi.top 或 https://buzhaoshi.top
+本页为网站文件存放处，浏览网站请点击：https://www.buzhaoshi.top 或 https://buzhaoshi.top
 本站永久域名：https://buzhaoshi.github.io 
 此情不可再！但愿在这温馨的时刻能为伙伴们再次点燃心中的情怀之焰，
 一起在闲暇的时光中重返童年，重温那一瞬，在那一去不返的惬意时光里，找回儿时的那一片净土...... 
