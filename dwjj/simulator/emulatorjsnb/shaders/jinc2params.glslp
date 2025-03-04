@@ -1,0 +1,4 @@
+shaders = 1
+
+shader0 = jinc2params.glsl
+filter_linear0 = false

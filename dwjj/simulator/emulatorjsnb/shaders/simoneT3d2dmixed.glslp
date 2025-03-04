@@ -1,0 +1,4 @@
+shaders = 1
+
+shader0 = simoneT3d2dmixed.glsl
+filter_linear0 = true
